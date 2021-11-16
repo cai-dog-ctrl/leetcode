@@ -9,7 +9,6 @@ import "fmt"
 
 判断你是否能够到达最后一个下标。
 
-
 */
 func canJump(nums []int) bool {
 	dp := make([]bool, 3e4+1)
