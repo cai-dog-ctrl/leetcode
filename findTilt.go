@@ -1,13 +1,11 @@
 package main
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 func findTilt(root *TreeNode) int {
 	Search(root)
 	var ans = 0
@@ -35,12 +33,14 @@ func findTilt(root *TreeNode) int {
 	PoDU(root)
 	return ans
 }
-func abs(a int) int {
-	if a < 0 {
-		return -a
-	}
-	return a
-}
+
+//func abs(a int) int {
+//	if a < 0 {
+//		return -a
+//	}
+//	return a
+//}
+
 func Search(root *TreeNode) int {
 	if root == nil {
 		return 0
