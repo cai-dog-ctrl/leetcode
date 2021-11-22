@@ -26,12 +26,13 @@ func maxDepth(root *Node) int {
 	Search(root, 1)
 	return Max
 }
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
+
+//func max(a, b int) int {
+//	if a > b {
+//		return a
+//	}
+//	return b
+//}
 func main() {
 
 }
